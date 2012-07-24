@@ -8,10 +8,7 @@ echo "Going to compile ibx module..."
 
 cd $BUILD_DIR
 
-sh ./build.sh
+./build.sh
 
-cd target/dist
-
-sh ./start-landregistry-app.sh
 
 echo "Done."
