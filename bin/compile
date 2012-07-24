@@ -1,10 +1,17 @@
 #!/bin/sh
 # Usage: bin/compile <build-dir> <cache-dir>
 
+BUILD_DIR=$1
+CACHE_DIR=$2
+
 echo "Going to compile ibx module..."
 
-cd $1
+cd $BUILD_DIR
 
 sh ./build.sh
+
+cd target/dist
+
+sh ./start-landregistry-app.sh
 
 echo "Done."
