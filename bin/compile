@@ -3,6 +3,6 @@
 
 echo "Going to compile ibx module..."
 
-javac --version
+javac -version
 
 echo "Done."
