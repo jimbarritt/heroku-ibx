@@ -3,6 +3,6 @@
 
 echo "Going to compile ibx module..."
 
-sh ./build.sh
+sh $1/build.sh
 
 echo "Done."
